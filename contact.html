@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIIT Abeokuta Web App</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="contact.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="icon" type="image/x-icon" href="/NIITABEOKUTA/Images/niit-logo.png"/> -->
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About NIIT</a>
+        <a href="#">Services</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Register</a>
+        <a href="#">Login</a>
+    </div>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div class="container">
+        <!-- Use any element to open the sidenav -->
+        <div class="home-section">
+            <header>
+                <div class="headerDiv">
+                    <div class="logoDiv">
+                        <h1>NIIT</h1>
+                        <b>Abeokuta</b>
+                    </div>
+                    <div class="sideOpenDiv">
+                        <i onclick="openNav()" class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- all content about niit contact -->
+            <div class="parent_div">
+                <div class="parent_div1">
+                    <div class="child_div1">
+                        <hr class="hr1"> <br>
+                        <h4 class="text1">CONTACT US</h2> <br>
+                            <hr class="hr2">
+                    </div>
+
+                    <!-- container for contact and address only -->
+                    <div class="child_div2">
+
+                        <!-- for the call and address code -->
+                        <div class="subParentdiv"> 
+                            <div class="inner_subParentdiv">
+                                <h3> Contact</h4>
+                                <button> Call now </button> 
+                                <h4> 0907654321</h3> 
+                            </div>
+                            <div class="inner_subParentdiv">
+                                <h3> Address</h4>
+                                <button> Get Direction </button> 
+                                <h4> edu gass line <br> no 22 adewale street <br> lagos nigeria</h3>
+                            </div>
+                        </div>
+                        <!-- ends here -->
+
+                        <!-- opening times  -->
+                        <div class="subParentdiv">
+                            <h3> Open Days </h4>
+                                <h4> Mon: 9:30am - 5:00pm </h4> <br>
+                                <h4> Tue: 9:30am - 5:00pm </h4> <br>
+                                <h4> Wed: 9:30am - 5:00pm </h4> <br>
+                                <h4> Thu: 9:30am - 5:00pm </h4> <br>
+                                <h4> Fri: 9:30am - 5:00pm </h4> <br>
+                                <h4> Sat: Closed </h4> <br>
+                                <h4> Sun: Closed </h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="contact.js"></script>
+</body>
+
+</html>

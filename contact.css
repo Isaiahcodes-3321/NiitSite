@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: auto;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 2%;
+    background-color: #007bff;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    border-radius: 2em;
+    text-align: center;
+    padding-top: 8%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f2f2f2;
+    display: block;
+    transition: all .5s ease;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: turquoise;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* .home-section{
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.4) url(/NIITABEOKUTA/Images/niit.jpg) no-repeat;
+  background-size: cover !important;
+  object-fit: fill;
+  background-blend-mode: darken;
+} */
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.headerDiv {
+    width: 90%;
+    height: 5em;
+    background-color: #007bff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    user-select: none;
+    border-radius: 5px;
+
+}
+
+.sideOpenDiv {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideOpenDiv i {
+    font-size: 3em;
+    color: #ffffffff;
+    cursor: pointer;
+}
+
+.logoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 25em;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    color: navy;
+}
+
+.logoDiv h1 {
+    font-size: 4em;
+}
+
+.logoDiv b {
+    font-size: 1em;
+    margin-top: 10%;
+
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+    
+}
+
+/* On tablet screens, and big screen also */
+@media screen and (min-width: 850px) {
+    .child_div2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    .parent_div1 {
+        width: 75%;
+        background-color: #dee4eb;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+    .parent_div {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+    }
+    .child_div1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    /* for head text contact text */
+    .text1{
+        font-size: 3vw;
+    }
+    .hr1{
+        width: 10vw;
+        border-color: rgb(0, 0, 0);
+    }
+    .hr2{
+        width: 30vw;
+        border-color: rgb(0, 0, 0);
+    }
+     /* for contact and address code */
+     .subParentdiv{ 
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 1%;
+    }
+    .inner_subParentdiv{
+        margin-top: 20%;
+    }
+}
+
+/* On smaller screens, */
+@media (max-width: 850px) {
+
+    .headerDiv {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .sideOpenDiv {
+        width: auto;
+    }
+
+    .sideOpenDiv i {
+        font-size: 2em;
+    }
+
+    .logoDiv {
+        width: auto;
+    }
+
+    .logoDiv h1 {
+        font-size: 3em;
+    }
+
+    /* The side navigation menu */
+
+    .parent_div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+    }
+
+    .parent_div1 {
+        width: 75%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #dee4eb;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+
+    .child_div1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    /* for head text contact text */
+    .text1{
+        font-size: 5vw;
+    }
+    .hr1{
+        width: 13vw;
+        border-color: rgb(0, 0, 0);
+    }
+    .hr2{
+        width: 40vw;
+        border-color: rgb(0, 0, 0);
+    }
+    .child_div2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    /* for contact and address code */
+    .subParentdiv{ 
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 15%;
+    }
+    .inner_subParentdiv{
+        margin-top: 20%;
+    }
+
+}
